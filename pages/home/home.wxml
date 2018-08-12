@@ -1,0 +1,45 @@
+<!--pages/home/home.wxml-->
+<import src="/templates/tips1/template-tips1.wxml" />
+<import src="/templates/tips2/template-tips2.wxml" />
+<import src="/templates/course/template-course.wxml" />
+<import src="/templates/video/template-video.wxml" />
+
+<view>
+  <!-- 轮播图 -->
+  <swiper class="slide" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}" indicator-active-color="#ffffff">
+    <block wx:for="{{swipers}}" wx:key="{{item.id}}">
+      <swiper-item>
+        <image src="{{item.img_url}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 2.0 热门课程 -->
+  <view class="hot-course">
+    <!-- 提示 -->
+    <view class="tips">
+      <!-- 左边的提示 -->
+      <template is="tips1" data="{{...tips1}}" />
+      <!-- 右边的提示 -->
+      <template is="tips2" data="{{...tips2}}" />
+    </view>
+    <!-- 滚动视图 -->
+    <scroll-view scroll-x class="courses-scroll">
+      <block wx:for="{{courses}}" wx:key="{{item.id}}">
+        <template is="course" data="{{...item}}" />
+      </block>
+    </scroll-view>
+  </view>
+  <!-- 推荐视频 -->
+  <view class="recommend-video">
+    <view>
+      <!-- 左边提示 -->
+      <template is="tips1" data="{{...tips3}}" />
+      <view class="videos">
+        <block wx:for="{{videos}}" wx:key="{{item.id}}">
+          <template is="video" data="{{...item}}" />
+        </block>
+      </view>
+    </view>
+  </view>
+
+</view>

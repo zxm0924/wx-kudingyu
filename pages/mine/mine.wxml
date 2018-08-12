@@ -1,0 +1,20 @@
+<!--pages/mine/mine.wxml-->
+<!-- <text>pages/mine/mine.wxml</text>
+ -->
+<view>
+  <view class="avatar">
+    <!-- 头像区域 -->
+    <image src="/images/头像 男孩.png"></image>
+    <text>蓝萼</text>
+  </view>
+  <!-- 会员过期时间 -->
+  <view class="expiresDate">
+    <settings settings="{{expiresDate}}"/>
+  </view>
+  <!-- 其他项目 -->
+   <view class="otherSettings">
+     <block wx:for="{{settings}}" wx:key="{{item.title}}" >
+       <settings bind:goToSettingsPage ="goToSettingsPage"  settings="{{item}}" />
+     </block>
+  </view>
+</view>

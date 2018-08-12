@@ -1,0 +1,13 @@
+<!--pages/mobile_bind/mobile_bind.wxml-->
+<!-- <text>pages/mobile_bind/mobile_bind.wxml</text>
+ -->
+<view >
+  <view class="my-inputs">
+    <my-input myInput="{{mobile}}" />
+    <my-input class="vcode" myInput="{{vcode}}" />
+    <text>绑定手机成功后可免费获得三天体验哦</text>
+  </view>
+  <view  catchtap='validateBind' class="validateBind">
+    <text>验证绑定</text>
+  </view>
+  </view>

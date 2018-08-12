@@ -1,0 +1,48 @@
+/* components/course.wxss */
+.course{
+  height: 231rpx;
+ background-color: #fff;
+  display:flex;
+  align-items: center;
+  margin-top:20rpx;
+}
+
+.course image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-left:35rpx;
+
+}
+.course .title{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  margin-left:10rpx;
+ 
+}
+
+.course .title1{
+  font-size: 32rpx;
+  color:#333333;
+}
+
+.course .subtitle{
+  font-size: 32rpx;
+  color:#a3a3a3;
+  margin-top:10rpx;
+
+}
+.course .tips{
+  margin-right:20rpx;
+  width: 150rpx;
+  height: 60rpx;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+}
+ 
+.course .tips text{
+   font-size: 20rpx;
+   
+} 

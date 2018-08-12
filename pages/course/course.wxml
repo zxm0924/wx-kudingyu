@@ -1,0 +1,7 @@
+<!--pages/course/course.wxml-->
+<!-- <text>pages/course/course.wxml</text> -->
+<view>
+ <block wx:for="{{courses}}" wx:key="{{item.id}}">
+ <course bind:tapCourse="getTapCourse" course="{{item}}"/>
+</block>
+</view>

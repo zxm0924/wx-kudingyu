@@ -1,0 +1,5 @@
+/* pages/course/course.wxss */
+
+.course{
+  padding:0rpx 20rpx;
+}

@@ -1,0 +1,24 @@
+/* components/my-input/my-input.wxss */
+
+.my-input {
+  position: relative;
+  color:#666;
+  font-size: 30rpx;
+}
+
+.my-input  input {
+  width: 600rpx;
+  height: 100rpx;
+  background-color: #ffff;
+  /* border:1px solid red; */
+  border-radius: 50rpx;
+  padding-left: 20rpx;
+ 
+}
+
+.my-input .vcode {
+  position: absolute;
+  top: 5rpx;
+  right: 48rpx;
+  z-index:10;
+}
